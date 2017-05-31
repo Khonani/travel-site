@@ -29,11 +29,16 @@
     position: absolute;
     top: 0;
     left: 50%;
-    transform: translateX(-50%) scale(.7);
+    transform: translateX(-50%) scale(.4);
     transition: transform .3s ease-out;
     transform-origin: 50% 0%;
     background-color: $mainBlue;
     padding: 25px 36px;
+
+    @mixin atXSmall {
+      left: 50%;
+      transform: translateX(-50%) scale(.7);
+    }
 
     @mixin atMedium {
       left: auto;
