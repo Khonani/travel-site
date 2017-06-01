@@ -26,6 +26,14 @@
       margin-bottom: 0;
     }
 
+    &--fixed {
+      margin-top: 60px;
+      @mixin atSmall {
+        margin-top: 0;
+      }
+    }
+
+
 
   }
 

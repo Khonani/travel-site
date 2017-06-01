@@ -914,6 +914,17 @@ a {
   }
 }
 
+.section-title__icon--fixed {
+  margin-top: 60px;
+}
+
+@media (min-width: 530px) {
+
+  .section-title__icon--fixed {
+    margin-top: 0;
+  }
+}
+
 .section-title--blue {
   color: #2f5572;
 }
@@ -1381,7 +1392,7 @@ Instead edit gulp/templates/sprite/ */
 
 .modal {
   position: fixed;
-  z-index: 5;
+  z-index: 6;
   background-color: rgba(255, 255, 255, .94);
   top: 0;
   bottom: 0;
@@ -1395,10 +1406,10 @@ Instead edit gulp/templates/sprite/ */
 }
 
 .modal--is-visible {
-  opacity: 1;
   visibility: visible;
   -webkit-transform: scale(1);
           transform: scale(1);
+  opacity: 1;
 }
 
 .modal__description {
