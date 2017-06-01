@@ -1397,16 +1397,8 @@ Instead edit gulp/templates/sprite/ */
 .modal--is-visible {
   opacity: 1;
   visibility: visible;
-  -webkit-transform: scale(.8);
-          transform: scale(.8);
-}
-
-@media (min-width: 530px) {
-
-  .modal--is-visible {
-    -webkit-transform: scale(1);
-            transform: scale(1);
-  }
+  -webkit-transform: scale(1);
+          transform: scale(1);
 }
 
 .modal__description {
