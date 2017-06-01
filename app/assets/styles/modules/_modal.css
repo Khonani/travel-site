@@ -1,5 +1,5 @@
 .modal {
-  position: absolute;
+  position: fixed;
   z-index: 5;
   background-color: rgba(255, 255, 255, .94);
   top: 0;
@@ -14,7 +14,10 @@
   &--is-visible {
     opacity: 1;
     visibility: visible;
-    transform: scale(1);
+    transform: scale(.8);
+    @mixin atSmall {
+      transform: scale(1);
+    }
   }
 
   &__description {
